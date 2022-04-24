@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100wv;
+}
+
+header {
+  width: 100vw;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .wrapper-logo {
+  margin-right: 150px;
+}
+header button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+main section {
+  background-color: #2d2640;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+main section .pattern-left {
+  position: absolute;
+  right: 0%;
+  top: 84%;
+}
+main section .pattern-left2 {
+  position: absolute;
+  right: 0%;
+  top: 84%;
+}
+main section .wrapper-section {
+  background-image: url("../images/bg-pattern-intro-left-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -4px;
+  height: 500px;
+}
+main section .wrapper-content-section {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+main section .wrapper-content-section h1 {
+  font-family: "DM Serif Display";
+  font-size: 2.6rem;
+  text-align: center;
+  color: #fafafa;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+main section .wrapper-content-section p {
+  text-align: center;
+  font-family: "Karla";
+  color: #fafafa;
+  margin-top: -20px;
+  line-height: 2rem;
+}
+main section .wrapper-content-section button {
+  border: 2px solid #fafafa;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fafafa;
+  font-family: "Karla";
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-top: 15px;
+}
+main .cards {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */
