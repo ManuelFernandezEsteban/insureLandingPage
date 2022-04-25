@@ -12,7 +12,7 @@ body {
 
 header {
   width: 100vw;
-  min-height: 90px;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -26,22 +26,18 @@ header button {
   background-color: transparent;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 main section {
   background-color: #2d2640;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-}
-main section .pattern-left {
-  position: absolute;
-  right: 0%;
-  top: 84%;
-}
-main section .pattern-left2 {
-  position: absolute;
-  right: 0%;
-  top: 84%;
 }
 main section .wrapper-section {
   background-image: url("../images/bg-pattern-intro-left-mobile.svg");
@@ -60,31 +56,31 @@ main section .wrapper-content-section {
   width: 85%;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 55px;
 }
 main section .wrapper-content-section h1 {
   font-family: "DM Serif Display";
-  font-size: 2.6rem;
+  font-size: 2.85rem;
   text-align: center;
   color: #fafafa;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0;
   font-weight: 400;
-  line-height: 2.6rem;
+  line-height: 2.9rem;
 }
 main section .wrapper-content-section p {
   text-align: center;
   font-family: "Karla";
   color: #fafafa;
   margin-top: -20px;
-  line-height: 2rem;
+  line-height: 1.6rem;
 }
 main section .wrapper-content-section button {
-  border: 2px solid #fafafa;
+  border: 1px solid #fafafa;
   cursor: pointer;
   background-color: transparent;
   color: #fafafa;
   font-family: "Karla";
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   padding: 10px 30px;
   margin-top: 15px;
@@ -93,7 +89,156 @@ main .cards {
   background-color: white;
   display: flex;
   flex-direction: column;
+  align-content: center;
   position: relative;
+}
+main .cards .pattern-left2 {
+  position: absolute;
+  right: 0%;
+  top: -14%;
+}
+main .cards .line {
+  border: 0.3px solid #2d2640;
+  width: 40%;
+  margin-top: 140px;
+  opacity: 0.3;
+}
+main .cards h1 {
+  font-family: "DM Serif Display";
+  font-size: 2.85rem;
+  text-align: center;
+  color: #2b272f;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+main .cards .wrapper-cards {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 85%;
+}
+main .cards .wrapper-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+main .cards .wrapper-cards .card .icon {
+  width: 90px;
+  height: 90px;
+  align-self: center;
+  margin-top: 40px;
+}
+main .cards .wrapper-cards .card h2 {
+  align-self: center;
+  font-family: "DM Serif Display";
+  color: #2b272f;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+main .cards .wrapper-cards .card p {
+  align-self: center;
+  font-family: "Karla";
+  text-align: center;
+  color: #837d87;
+  line-height: 1.8rem;
+  margin-top: -5px;
+}
+main .we-work {
+  width: 85%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+  margin-top: 120px;
+}
+main .we-work .img-pattern-work {
+  position: absolute;
+  right: 0%;
+}
+main .we-work h2 {
+  font-family: "DM Serif Display";
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fafafa;
+  letter-spacing: 0;
+  font-weight: 400;
+  line-height: 2.7rem;
+  padding: 35px;
+}
+main .we-work button {
+  border: 2px solid #fafafa;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fafafa;
+  font-family: "Karla";
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-top: -40px;
+  margin-bottom: 80px;
+}
+
+footer {
+  margin-top: 120px;
+  background-color: #fafafa;
+  width: 100%;
+  background-image: url("../images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+}
+footer .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 90px;
+}
+footer .header .wrapper-logo {
+  align-self: center;
+}
+footer .header .social-media {
+  align-self: center;
+  margin: 20px;
+}
+footer .header .social-media img {
+  margin: 5px;
+}
+footer .line-footer {
+  border: 1px solid #837d87;
+  opacity: 0.3;
+  width: 85%;
+  align-self: center;
+}
+footer .box-footer {
+  font-family: "Karla";
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .box-footer ul {
+  color: #837d87;
+  list-style-image: none;
+  list-style-type: none;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer .box-footer ul li {
+  text-align: center;
+  color: #2b272f;
+  padding: 8px;
+}
+footer .box-footer ul li:nth-child(1) {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

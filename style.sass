@@ -21,7 +21,7 @@ body
     width: 100wv
 header
     width: 100vw
-    min-height: 90px
+    min-height: 80px
     display: flex
     align-items: center
     justify-content: space-around  
@@ -31,21 +31,19 @@ header
         border: none
         cursor: pointer
         background-color: transparent
-main    
+main  
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+
     section
         background-color: $darkViolet
         display: flex
         flex-direction: column
         align-items: center
-        position: relative        
-        .pattern-left
-            position: absolute
-            right: 0%
-            top: 84%
-        .pattern-left2
-            position: absolute
-            right: 0%
-            top: 84%
+        position: relative                
+        
         .wrapper-section
             background-image: url('../images/bg-pattern-intro-left-mobile.svg')
             background-repeat: no-repeat
@@ -62,28 +60,28 @@ main
             width: 85%
             align-items: center
             justify-content: center
-            margin-top: 50px
+            margin-top: 55px
             h1
                 font-family: $font-family-head
-                font-size: 2.6rem
+                font-size: 2.85rem
                 text-align: center
                 color: $veryLightGray
-                letter-spacing: 0.1rem
+                letter-spacing: 0
                 font-weight: 400
-                line-height: 2.6rem
+                line-height: 2.9rem
             p
                 text-align: center
                 font-family: $font-family-body
                 color: $veryLightGray
                 margin-top: -20px
-                line-height: 2rem
+                line-height: 1.6rem
             button
-                border: 2px solid $veryLightGray
+                border: 1px solid $veryLightGray
                 cursor: pointer
                 background-color: transparent
                 color: $veryLightGray
                 font-family: $font-family-body
-                font-size: 1rem
+                font-size: 0.9rem
                 text-transform: uppercase
                 padding: 10px 30px
                 margin-top: 15px
@@ -92,6 +90,136 @@ main
         background-color: white
         display: flex
         flex-direction: column
+        align-content: center
         position: relative
         
+        .pattern-left2
+            position: absolute
+            right: 0%
+            top: -14%
+        .line
+            border: 0.3px solid $darkViolet
+            width: 40%
+            margin-top: 140px
+            opacity: 0.3
+        h1
+            font-family: $font-family-head
+            font-size: 2.85rem
+            text-align: center
+            color: $veryDarkViolet
+            letter-spacing: 0.1rem
+            font-weight: 400
+            line-height: 2.7rem
+        .wrapper-cards
+            display: flex
+            flex-direction: column
+            align-content: center
+            width: 85%
+            .card
+                display: flex
+                flex-direction: column
+                align-content: center
+                .icon
+                    width: 90px
+                    height: 90px
+                    align-self: center
+                    margin-top: 40px
+                h2
+                    align-self: center
+                    font-family: $font-family-head
+                    color: $veryDarkViolet
+                    font-size: 1.8rem
+                    font-weight: 400
+                p
+                    align-self: center
+                    font-family: $font-family-body
+                    text-align: center
+                    color: $darkGrayishViolet
+                    line-height: 1.8rem
+                    margin-top: -5px
+    .we-work
+        width: 85%
+        position: relative
+        display: flex
+        flex-direction: column
+        align-content: center
+        align-self: center
+        margin-top: 120px
+        .img-pattern-work
+            position: absolute
+            right: 0%
+        h2
+            font-family: $font-family-head
+            font-size: 2.5rem
+            text-align: center
+            color: $veryLightGray
+            letter-spacing: 0
+            font-weight: 400
+            line-height: 2.7rem
+            padding: 35px
+        button
+            border: 2px solid $veryLightGray
+            cursor: pointer
+            background-color: transparent
+            color: $veryLightGray
+            font-family: $font-family-body
+            font-size: 0.9rem
+            text-transform: uppercase
+            padding: 10px 30px
+            margin-top: -40px
+            margin-bottom: 80px
+footer
+    margin-top: 120px
+    background-color: $veryLightGray
+    width: 100%
+    background-image: url('../images/bg-pattern-footer-mobile.svg')
+    background-repeat: no-repeat
+    background-position: top    
+    display: flex
+    flex-direction: column
+    .header
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        margin-top: 90px
+        .wrapper-logo
+            align-self: center
+        .social-media
+            align-self: center
+            margin: 20px
+            img
+                margin: 5px
+    
+    .line-footer
+        border: 1px solid $darkGrayishViolet
+        opacity: 0.3
+        width: 85%
+        align-self: center
+    .box-footer
+        font-family: $font-family-body
+        align-self: center
+        text-transform: uppercase
+        font-size: 0.9rem
+        margin-top: 20px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        ul
+            color: $darkGrayishViolet
+            list-style-image: none
+            list-style-type: none
+            font-weight: 600
+            text-align: center
+            margin-bottom: 10px 
+            li
+                text-align: center
+                color: $veryDarkViolet
+                padding: 8px
+                &:nth-child(1)                    
+                    margin-top: 20px
 
+
+
+                       
