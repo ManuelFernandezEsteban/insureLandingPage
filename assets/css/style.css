@@ -13,17 +13,79 @@ body {
 header {
   width: 100vw;
   min-height: 80px;
+}
+header .menu-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+header .menu-mobile .content-logo-button {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-header .wrapper-logo {
+header .menu-mobile .content-logo-button .wrapper-logo {
   margin-right: 150px;
 }
-header button {
+header .menu-mobile .content-logo-button button {
   border: none;
   cursor: pointer;
   background-color: transparent;
+}
+
+.menu-desplegable {
+  width: 100%;
+  height: auto;
+  font-family: "Karla";
+  background-color: #2b272f;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.menu-desplegable ul {
+  list-style-image: none;
+  list-style-type: none;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 0px;
+  text-transform: uppercase;
+}
+.menu-desplegable li {
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.menu-desplegable li:nth-child(1) {
+  margin-top: 30px;
+}
+.menu-desplegable li:hover {
+  text-decoration: underline;
+}
+.menu-desplegable button {
+  border: 2px solid #fafafa;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fafafa;
+  font-family: "Karla";
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  width: 90%;
+  margin-top: 15px;
+}
+.menu-desplegable button:hover {
+  background-color: #fafafa;
+  color: #2d2640;
+}
+.menu-desplegable img {
+  margin-top: 60px;
 }
 
 main {
@@ -84,6 +146,10 @@ main section .wrapper-content-section button {
   text-transform: uppercase;
   padding: 10px 30px;
   margin-top: 15px;
+}
+main section .wrapper-content-section button:hover {
+  background-color: #fafafa;
+  color: #2d2640;
 }
 main .cards {
   background-color: white;
@@ -179,6 +245,10 @@ main .we-work button {
   margin-top: -40px;
   margin-bottom: 80px;
 }
+main .we-work button:hover {
+  background-color: #fafafa;
+  color: #2d2640;
+}
 
 footer {
   margin-top: 120px;
@@ -204,8 +274,12 @@ footer .header .social-media {
   align-self: center;
   margin: 20px;
 }
-footer .header .social-media img {
+footer .header .social-media i {
+  cursor: pointer;
   margin: 5px;
+}
+footer .header .social-media i:hover svg path {
+  fill: #2d2640;
 }
 footer .line-footer {
   border: 1px solid #837d87;
@@ -231,14 +305,23 @@ footer .box-footer ul {
   font-weight: 600;
   text-align: center;
   margin-bottom: 10px;
+  padding: 0px;
 }
 footer .box-footer ul li {
   text-align: center;
   color: #2b272f;
   padding: 8px;
+  cursor: pointer;
 }
 footer .box-footer ul li:nth-child(1) {
   margin-top: 20px;
+}
+footer .box-footer ul li:hover {
+  text-decoration: underline;
+}
+
+.no-visible {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
