@@ -9,6 +9,13 @@ $veryLightGray: hsl(0, 0%, 98%)
 
 $font-family-body: 'Karla'
 $font-family-head: 'DM Serif Display'
+$desktop: 1223px
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
 
 body
     margin: 0
@@ -33,10 +40,52 @@ header
             justify-content: space-around
             .wrapper-logo
                     margin-right: 150px
-            button
+            #btn-menu
                 border: none
                 cursor: pointer
                 background-color: transparent
+                @media (min-width: $desktop)
+                    display: none
+        .menu-desktop
+            @media (max-width: $desktop)
+                    display: none
+            display: flex
+            align-items: center
+            justify-content: center
+            font-family: $font-family-body
+            color: $darkGrayishViolet
+            ul        
+                display: inline-flex
+                list-style-type: none
+                font-weight: 600
+                text-align: center                
+                padding: 0px
+                margin-right: 20px
+                text-transform: uppercase
+            li
+                text-align: center                        
+                cursor: pointer  
+                margin-right: 20px
+                &:hover
+                    text-decoration: underline  
+                &:nth-child(1)                    
+                    margin-left: 20px 
+            button
+                border: 2px solid $veryDarkViolet
+                cursor: pointer
+                background-color: transparent
+                color: $veryDarkViolet
+                font-family: $font-family-body
+                font-size: 1rem
+                text-transform: uppercase
+                padding: 8px 13px            
+                width: 150px 
+                font-weight: 600                   
+                &:hover
+                    background-color: $veryDarkViolet
+                    color: $darkGrayishViolet
+                    
+
 .menu-desplegable
     width: 100%
     height: auto
@@ -49,6 +98,8 @@ header
     padding-top: 50px
     font-size: 1.3rem
     font-weight: 400
+    @media (min-width: $desktop)
+        display: none
     ul        
         list-style-image: none
         list-style-type: none
@@ -94,18 +145,42 @@ main
         display: flex
         flex-direction: column
         align-items: center
-        position: relative                
-        
-        .wrapper-section
-            background-image: url('../images/bg-pattern-intro-left-mobile.svg')
-            background-repeat: no-repeat
-            background-position-x: left
-            background-position-y: top
+        position: relative 
+        .pattern-desktop
+            @media ( max-width:$desktop  )
+                display: none
+            @media(min-width: $desktop)
+                position: absolute
+                z-index: 3
+                right: 0%
+                top: 0%
+        @media (min-width: $desktop)
+            height: 650px          
+        .wrapper-image-mobile
+            
+            img                
+            @media (min-width: $desktop)
+                display: none        
+        .wrapper-section           
             display: flex
             flex-direction: column
             align-items: center
             margin-top: -4px
             height: 500px
+            position: relative
+            .pattern-mobile
+                position: absolute
+                top: 0%
+                left: 0%
+                @media (min-width: $desktop)
+                    display: none
+            
+            
+            @media (min-width: $desktop)  
+                align-items: flex-start
+                height: 650px
+                justify-content: center
+            
         .wrapper-content-section
             display: flex
             flex-direction: column
@@ -113,6 +188,23 @@ main
             align-items: center
             justify-content: center
             margin-top: 55px
+            
+            @media (min-width: $desktop)
+                align-items: center
+                justify-content: center
+                width: 35%
+                margin-left: 120px
+                margin-top: 0px
+                height: 100%
+            .line
+                background-color: white
+                height: 0.3px
+                width: 30%
+                align-self: flex-start
+                margin-bottom: 30px                  
+                @media (max-width: $desktop)
+                    display: none
+            
             h1
                 font-family: $font-family-head
                 font-size: 2.85rem
@@ -121,12 +213,20 @@ main
                 letter-spacing: 0
                 font-weight: 400
                 line-height: 2.9rem
+                margin-top: 30px                
+                @media (min-width: $desktop)
+                    text-align: left
+                    font-size: 4rem
+                    line-height: 4rem    
+                    margin-bottom: 30px                
             p
                 text-align: center
                 font-family: $font-family-body
                 color: $veryLightGray
-                margin-top: -20px
+                margin-top: 20px
                 line-height: 1.6rem
+                @media (min-width: $desktop)
+                    text-align: left
             button
                 border: 1px solid $veryLightGray
                 cursor: pointer
@@ -136,57 +236,96 @@ main
                 font-size: 0.9rem
                 text-transform: uppercase
                 padding: 10px 30px
-                margin-top: 15px
+                margin-top: 25px
                 &:hover
                     background-color: $veryLightGray
                     color: $darkViolet
-        
+                @media (min-width: $desktop)
+                    align-self: flex-start
+        .wrapper-image-desktop 
+            @media (max-width: $desktop)
+                display: none
+            @media (min-width: $desktop)
+                img                                
+                    position: absolute
+                    right: 11%
+                    top: 20% 
+                    z-index: 2                     
     .cards
         background-color: white
         display: flex
         flex-direction: column
         align-content: center
         position: relative
-        
+                        
         .pattern-left2
             position: absolute
             right: 0%
-            top: -14%
-        .line
-            height: 0.5px
-            background-color: $darkViolet
-             
-            width: 40%
-            margin-top: 140px
-            opacity: 0.3
-        h1
-            font-family: $font-family-head
-            font-size: 2.85rem
-            text-align: center
-            color: $veryDarkViolet
-            letter-spacing: 0.1rem
-            font-weight: 400
-            line-height: 2.7rem
+            top: -17%
+            @media (min-width: $desktop)
+                display: none
+        .pattern-left-desktop
+            position: absolute
+            left: 0%
+            top: -26%
+            @media (max-width: $desktop)  
+                display: none              
+        .cards-container 
+            margin-top: 100px
+            @media (min-width: $desktop)               
+                margin-top: 130px
+                margin-left: 120px
+            h1
+                font-family: $font-family-head
+                font-size: 2.85rem
+                text-align: center
+                color: $veryDarkViolet
+                letter-spacing: 0.1rem
+                font-weight: 400
+                line-height: 2.7rem
+                @media (min-width: $desktop)
+                    text-align: left
+                    margin-top: 80px
+                    font-size: 4rem
+            .line
+                height: 0.5px
+                background-color: $darkViolet             
+                width: 10%
+                margin-top: 140px
+                opacity: 0.3
+                @media (max-width: $desktop)  
+                    display: none
+            
         .wrapper-cards
             display: flex
             flex-direction: column
             align-content: center
             width: 85%
+            @media (min-width: $desktop)
+                flex-direction: row
             .card
                 display: flex
                 flex-direction: column
                 align-content: center
+                @media (min-width: $desktop)
+                    margin-top: 80px
                 .icon
                     width: 90px
                     height: 90px
                     align-self: center
                     margin-top: 40px
+                    @media (min-width: $desktop)
+                        align-self: flex-start
+                        margin-top: 25px
                 h2
                     align-self: center
                     font-family: $font-family-head
                     color: $veryDarkViolet
                     font-size: 1.8rem
                     font-weight: 400
+                    @media (min-width: $desktop)
+                        align-self: flex-start
+                        margin-top: 25px
                 p
                     align-self: center
                     font-family: $font-family-body
@@ -194,17 +333,36 @@ main
                     color: $darkGrayishViolet
                     line-height: 1.8rem
                     margin-top: -5px
+                    @media (min-width: $desktop)
+                        align-self: flex-start
+                        text-align: left
+                        margin-top: 25px
     .we-work
         width: 85%
+        height: 330px
         position: relative
         display: flex
         flex-direction: column
         align-content: center
         align-self: center
         margin-top: 120px
+        @media (min-width: $desktop)
+            flex-direction: row
+            height: 250px
         .img-pattern-work
             position: absolute
             right: 0%
+            @media (min-width: $desktop)
+                display: none
+        .img-pattern-work-desktop
+            position: absolute
+            right: 0%
+            @media (max-width: $desktop)
+                display: none
+        .content-we-work
+            display: flex
+            width: 100%
+            justify-content: center
         h2
             font-family: $font-family-head
             font-size: 2.5rem
@@ -214,6 +372,14 @@ main
             font-weight: 400
             line-height: 2.7rem
             padding: 35px
+            @media (min-width: $desktop)
+                font-size: 3.5rem
+                width: 42%
+                text-align: left
+                padding: 0px
+                margin-left: 60px
+                line-height: 3.5rem
+
         button
             border: 2px solid $veryLightGray
             cursor: pointer
@@ -225,6 +391,11 @@ main
             padding: 10px 30px
             margin-top: -40px
             margin-bottom: 80px
+            @media (min-width: $desktop)
+                margin-top: 0px
+                margin-bottom: 0px
+                align-self: center
+                margin-right: 60px
             &:hover
                 background-color: $veryLightGray
                 color: $darkViolet
@@ -237,17 +408,33 @@ footer
     background-position: top    
     display: flex
     flex-direction: column
+    @media (min-width: $desktop)
+        background-image: url('../images/bg-pattern-footer-desktop.svg')
+        background-repeat: no-repeat
+        background-position: top 
+        background-position-x: left         
     .header
         display: flex
         flex-direction: column
         justify-content: center
         align-content: center
         margin-top: 90px
+        @media (min-width: $desktop)
+            flex-direction: row
+            justify-content: space-between
+
         .wrapper-logo
             align-self: center
+            @media (min-width: $desktop)
+                margin-left: 115px
+                margin-bottom: 25px
         .social-media
             align-self: center
             margin: 20px
+            @media (min-width: $desktop)
+                margin: 0px
+                margin-right: 110px
+                margin-bottom: 25px
             i   
                 cursor: pointer              
                 margin: 5px
@@ -261,6 +448,15 @@ footer
         background-color: $darkGrayishViolet        
         width: 85%
         align-self: center
+    .box-footer-container
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        @media (min-width: $desktop)
+            flex-direction: row
+            justify-content: flex-start
+            margin-left: 115px
     .box-footer
         font-family: $font-family-body
         align-self: center
@@ -279,11 +475,19 @@ footer
             text-align: center
             margin-bottom: 10px 
             padding: 0px
+            @media (min-width: $desktop)
+                margin-right: 200px
+                text-align: left
+                
             li
                 text-align: center
                 color: $veryDarkViolet
                 padding: 8px
                 cursor: pointer
+                @media (min-width: $desktop)                
+                    text-align: left
+                    padding: 8px
+                    padding-left: 0px
                 &:nth-child(1)                    
                     margin-top: 20px
                 &:hover

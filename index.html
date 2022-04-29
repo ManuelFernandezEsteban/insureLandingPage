@@ -29,14 +29,19 @@
       <div class="content-logo-button">
         <div class="wrapper-logo"><img src="./assets/images/logo.svg" alt="logo"></div>
         <button id="btn-menu"><img src="./assets/images/icon-hamburger.svg" alt="icono hamburguesa"></button>
+        <div class="menu-desktop">
+          <ul>How we work
+            <li>Blog</li>
+            <li>Account</li>
+          </ul>
+          <button>View plans</button>
+        </div>
+
       </div>
 
-
     </nav>
 
-    <nav class="menu-desktop">
 
-    </nav>
 
 
   </header>
@@ -50,12 +55,17 @@
   </div>
   <main>
     <section>
-      <div class="wrapper-image">
+      <div class="wrapper-image-mobile">
         <img src="./assets/images/image-intro-mobile.jpg" alt="intro family movil">
       </div>
+      <img class="pattern-desktop" src="./assets/images/bg-pattern-intro-right-desktop.svg" alt="pattern">
       <div class="wrapper-section">
+        <img class="pattern-mobile" src="./assets/images/bg-pattern-intro-left-mobile.svg" alt="pattern">
+        
 
         <div class="wrapper-content-section">
+          <div class="line"></div>
+
           <h1>Humanizing your insurance.</h1>
           <p>
             Get your life insurance coverage easier and faster. We blend our expertise
@@ -65,39 +75,49 @@
           <button>View plans</button>
         </div>
       </div>
+      <div class="wrapper-image-desktop">
+        <img src="./assets/images/image-intro-desktop.jpg" alt="intro family movil">
+      </div>
       <!--<img class="pattern-left" src="./assets/images/bg-pattern-intro-right-mobile.svg" alt="pattern">-->
     </section>
     <section class="cards">
-
+      <img class="pattern-left-desktop" src="./assets/images/bg-pattern-intro-left-desktop.svg" alt="pattern">
       <img class="pattern-left2" src="./assets/images/bg-pattern-intro-right-mobile.svg" alt="pattern">
-      <div class="line"></div>
-      <h1>We’re different</h1>
-      <div class="wrapper-cards">
-        <article class="card">
-          <img class="icon" src="./assets/images/icon-snappy-process.svg" alt="icon thunder">
-          <h2>Snappy Process</h2>
-          <p>Our application process can be completed in minutes, not hours. Don’t get
-            stuck filling in tedious forms.</p>
-        </article>
-        <article class="card">
-          <img class="icon" src="./assets/images/icon-affordable-prices.svg" alt="icon thunder">
-          <h2>Affordable Prices</h2>
-          <p>We don’t want you worrying about high monthly costs. Our prices may be low,
-            but we still offer the best coverage possible.</p>
-        </article>
-        <article class="card">
-          <img class="icon" src="./assets/images/icon-people-first.svg" alt="icon thunder">
-          <h2>People First</h2>
-          <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make
-            sure you’re covered when you need it.</p>
-        </article>
+      <div class="cards-container">
+        <div class="line"></div>
+        <h1>We’re different</h1>
+        <div class="wrapper-cards">
+          <article class="card">
+            <img class="icon" src="./assets/images/icon-snappy-process.svg" alt="icon thunder">
+            <h2>Snappy Process</h2>
+            <p>Our application process can be completed in minutes, not hours. Don’t get
+              stuck filling in tedious forms.</p>
+          </article>
+          <article class="card">
+            <img class="icon" src="./assets/images/icon-affordable-prices.svg" alt="icon thunder">
+            <h2>Affordable Prices</h2>
+            <p>We don’t want you worrying about high monthly costs. Our prices may be low,
+              but we still offer the best coverage possible.</p>
+          </article>
+          <article class="card">
+            <img class="icon" src="./assets/images/icon-people-first.svg" alt="icon thunder">
+            <h2>People First</h2>
+            <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make
+              sure you’re covered when you need it.</p>
+          </article>
+        </div>
       </div>
+
 
     </section>
     <section class="we-work">
       <img class="img-pattern-work" src="./assets/images/bg-pattern-how-we-work-mobile.svg" alt="pattern">
-      <h2>Find out more about how we work</h2>
-      <button>How we work</button>
+      <img class="img-pattern-work-desktop" src="./assets/images/bg-pattern-how-we-work-desktop.svg" alt="pattern">
+      <div class="content-we-work">
+        <h2>Find out more about how we work</h2>
+        <button>How we work</button>
+      </div>
+
     </section>
 
   </main>
@@ -127,36 +147,39 @@
       </div>
     </div>
     <div class="line-footer"></div>
-    <div class="box-footer">
-      <ul>Our company
-        <li>How we work</li>
-        <li>Why Insure?</li>
-        <li>View plans</li>
-        <li>Reviews</li>
-      </ul>
+    <div class="box-footer-container">
+      <div class="box-footer">
+        <ul>Our company
+          <li>How we work</li>
+          <li>Why Insure?</li>
+          <li>View plans</li>
+          <li>Reviews</li>
+        </ul>
+      </div>
+      <div class="box-footer">
+        <ul>Help me
+          <li>FAQ</li>
+          <li>Terms of use</li>
+          <li>Privacy policy</li>
+          <li>Cookies</li>
+        </ul>
+      </div>
+      <div class="box-footer">
+        <ul>Contact
+          <li>Sales</li>
+          <li>Support</li>
+          <li>Live chat</li>
+        </ul>
+      </div>
+      <div class="box-footer">
+        <ul>Others
+          <li>Careers</li>
+          <li>Press</li>
+          <li>Licenses</li>
+        </ul>
+      </div>
     </div>
-    <div class="box-footer">
-      <ul>Help me
-        <li>FAQ</li>
-        <li>Terms of use</li>
-        <li>Privacy policy</li>
-        <li>Cookies</li>
-      </ul>
-    </div>
-    <div class="box-footer">
-      <ul>Contact
-        <li>Sales</li>
-        <li>Support</li>
-        <li>Live chat</li>
-      </ul>
-    </div>
-    <div class="box-footer">
-      <ul>Others
-        <li>Careers</li>
-        <li>Press</li>
-        <li>Licenses</li>
-      </ul>
-    </div>
+    
   </footer>
 
   <div class="attribution">
