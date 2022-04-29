@@ -164,7 +164,8 @@ main .cards .pattern-left2 {
   top: -14%;
 }
 main .cards .line {
-  border: 0.3px solid #2d2640;
+  height: 0.5px;
+  background-color: #2d2640;
   width: 40%;
   margin-top: 140px;
   opacity: 0.3;
@@ -282,8 +283,8 @@ footer .header .social-media i:hover svg path {
   fill: #2d2640;
 }
 footer .line-footer {
-  border: 1px solid #837d87;
-  opacity: 0.3;
+  height: 0.5px;
+  background-color: #837d87;
   width: 85%;
   align-self: center;
 }
