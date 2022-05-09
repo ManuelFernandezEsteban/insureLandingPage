@@ -66,6 +66,11 @@ header
                 text-align: center                        
                 cursor: pointer  
                 margin-right: 20px
+                &:first-child
+                    font-weight: 600
+                    text-align: center                
+                    padding: 0px
+                    margin-right: 20px
                 &:hover
                     text-decoration: underline  
                 &:nth-child(1)                    
@@ -113,6 +118,11 @@ header
         padding: 8px
         cursor: pointer        
         margin-top: 20px
+        &:first-child
+            font-weight: 600
+            text-align: center                
+            padding: 0px
+            margin-right: 20px
         &:nth-child(1)                    
             margin-top: 30px
         &:hover
@@ -491,6 +501,7 @@ footer
             text-align: center
             margin-bottom: 10px 
             padding: 0px
+            
             @media (min-width: $desktop)
                 margin-right: 200px
                 text-align: left
@@ -500,6 +511,11 @@ footer
                 color: $veryDarkViolet
                 padding: 8px
                 cursor: pointer
+                &:first-child
+                    font-weight: 600                                 
+                    padding: 0px
+                    margin-bottom: 20px
+                    color: $darkGrayishViolet
                 @media (min-width: $desktop)                
                     text-align: left
                     padding: 8px

@@ -70,6 +70,12 @@ header .menu-mobile .menu-desktop li {
   cursor: pointer;
   margin-right: 20px;
 }
+header .menu-mobile .menu-desktop li:first-child {
+  font-weight: 600;
+  text-align: center;
+  padding: 0px;
+  margin-right: 20px;
+}
 header .menu-mobile .menu-desktop li:hover {
   text-decoration: underline;
 }
@@ -125,6 +131,12 @@ header .menu-mobile .menu-desktop button:hover {
   padding: 8px;
   cursor: pointer;
   margin-top: 20px;
+}
+.menu-desplegable li:first-child {
+  font-weight: 600;
+  text-align: center;
+  padding: 0px;
+  margin-right: 20px;
 }
 .menu-desplegable li:nth-child(1) {
   margin-top: 30px;
@@ -639,6 +651,12 @@ footer .box-footer ul li {
   color: #2b272f;
   padding: 8px;
   cursor: pointer;
+}
+footer .box-footer ul li:first-child {
+  font-weight: 600;
+  padding: 0px;
+  margin-bottom: 20px;
+  color: #837d87;
 }
 @media (min-width: 1223px) {
   footer .box-footer ul li {
