@@ -155,12 +155,13 @@ main
                 right: 0%
                 top: 0%
         @media (min-width: $desktop)
-            height: 650px          
+            height: 650px 
+            align-items: flex-start         
         .wrapper-image-mobile
             
             img                
-            @media (min-width: $desktop)
-                display: none        
+                @media (min-width: $desktop)
+                    display: none        
         .wrapper-section           
             display: flex
             flex-direction: column
@@ -272,6 +273,10 @@ main
                 display: none              
         .cards-container 
             margin-top: 100px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
             @media (min-width: $desktop)               
                 margin-top: 130px
                 margin-left: 120px
@@ -346,23 +351,31 @@ main
         align-content: center
         align-self: center
         margin-top: 120px
-        @media (min-width: $desktop)
-            flex-direction: row
+        @media (min-width: $desktop)            
             height: 250px
+            margin-top: 220px
         .img-pattern-work
             position: absolute
             right: 0%
+            z-index: 0
             @media (min-width: $desktop)
                 display: none
         .img-pattern-work-desktop
             position: absolute
             right: 0%
+             
             @media (max-width: $desktop)
                 display: none
         .content-we-work
             display: flex
+            flex-direction: column
             width: 100%
             justify-content: center
+            align-items: center
+            @media (min-width: $desktop)
+                flex-direction: row
+                height: 250px
+                justify-content: space-around
         h2
             font-family: $font-family-head
             font-size: 2.5rem
@@ -388,9 +401,9 @@ main
             font-family: $font-family-body
             font-size: 0.9rem
             text-transform: uppercase
-            padding: 10px 30px
-            margin-top: -40px
+            padding: 10px 30px            
             margin-bottom: 80px
+            z-index: 2
             @media (min-width: $desktop)
                 margin-top: 0px
                 margin-bottom: 0px
@@ -399,6 +412,8 @@ main
             &:hover
                 background-color: $veryLightGray
                 color: $darkViolet
+            
+            
 footer
     margin-top: 120px
     background-color: $veryLightGray

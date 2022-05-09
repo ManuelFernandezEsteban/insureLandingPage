@@ -181,10 +181,11 @@ main section {
 @media (min-width: 1223px) {
   main section {
     height: 650px;
+    align-items: flex-start;
   }
 }
 @media (min-width: 1223px) {
-  main section .wrapper-image-mobile {
+  main section .wrapper-image-mobile img {
     display: none;
   }
 }
@@ -335,6 +336,10 @@ main .cards .pattern-left-desktop {
 }
 main .cards .cards-container {
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 1223px) {
   main .cards .cards-container {
@@ -443,13 +448,14 @@ main .we-work {
 }
 @media (min-width: 1223px) {
   main .we-work {
-    flex-direction: row;
     height: 250px;
+    margin-top: 220px;
   }
 }
 main .we-work .img-pattern-work {
   position: absolute;
   right: 0%;
+  z-index: 0;
 }
 @media (min-width: 1223px) {
   main .we-work .img-pattern-work {
@@ -467,8 +473,17 @@ main .we-work .img-pattern-work-desktop {
 }
 main .we-work .content-we-work {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1223px) {
+  main .we-work .content-we-work {
+    flex-direction: row;
+    height: 250px;
+    justify-content: space-around;
+  }
 }
 main .we-work h2 {
   font-family: "DM Serif Display";
@@ -499,8 +514,8 @@ main .we-work button {
   font-size: 0.9rem;
   text-transform: uppercase;
   padding: 10px 30px;
-  margin-top: -40px;
   margin-bottom: 80px;
+  z-index: 2;
 }
 @media (min-width: 1223px) {
   main .we-work button {
